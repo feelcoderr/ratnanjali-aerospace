@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Metallic gold text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #927d50 0%, #ccb484 32%, #f0e4c0 55%, #d8c090 78%, #927d50 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  /* Flanking divider line for section titles */
+  .rule-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ccb484, transparent);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2c33;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ccb484;
+}
