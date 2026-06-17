@@ -1,7 +1,20 @@
 // Winged emblem logo image
 export function Logo({ className = "w-12 h-auto" }) {
   return (
-    <img src="/logo.svg" alt="Ratnanjali Aerospace" className={className} />
+    <img
+      src="/src/assets/images/logo.png"
+      alt="Ratnanjali Aerospace"
+      className={className}
+    />
+  );
+}
+export function LogoName({ className = " h-auto" }) {
+  return (
+    <img
+      src="/src/assets/images/logoname.png"
+      alt="Ratnanjali Aerospace"
+      className={className}
+    />
   );
 }
 

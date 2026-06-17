@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Search, Menu, X } from "lucide-react";
-import { Logo } from "./Logo.jsx";
+import { Logo, LogoName } from "./Logo.jsx";
 import { NAV } from "../data.js";
 
 export default function Navbar() {
@@ -21,15 +21,16 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-[78px] max-w-[1600px] items-center justify-between gap-6 px-5 md:px-10">
         {/* Brand */}
-        <a href="#home" className="flex items-center gap-3.5">
-          <Logo className="w-[52px] h-auto drop-shadow-[0_2px_6px_rgba(216,192,144,.25)]" />
+        <a href="#home" className="flex items-center ">
+          <Logo className="w-[100px] h-auto drop-shadow-[0_2px_6px_rgba(216,192,144,.25)]" />
           <span className="leading-none">
-            <span className="block font-display text-[21px] font-bold tracking-[3px] text-gold-gradient">
+            {/* <span className="block font-display text-[21px] font-bold tracking-[3px] text-gold-gradient">
               RATNANJALI
             </span>
             <span className="mt-1 block text-[12px] font-semibold tracking-[7px] text-gold-mid">
               AEROSPACE
-            </span>
+            </span> */}
+            <LogoName className="w-[auto] h-[70px] drop-shadow-[0_2px_6px_rgba(216,192,144,.25)]" />
           </span>
         </a>
 

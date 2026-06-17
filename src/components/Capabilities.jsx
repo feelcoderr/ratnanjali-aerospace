@@ -1,8 +1,13 @@
-import { Target, Camera, BatteryCharging } from 'lucide-react'
-import { SectionTitle } from './Logo.jsx'
-import { CAPABILITIES } from '../data.js'
+import { Plane, Crosshair, Puzzle, Boxes } from "lucide-react";
+import { SectionTitle } from "./Logo.jsx";
+import { CAPABILITIES } from "../data.js";
 
-const ICONS = { target: Target, camera: Camera, battery: BatteryCharging }
+const ICONS = {
+  drone: Plane,
+  focus: Crosshair,
+  puzzle: Puzzle,
+  blocks: Boxes,
+};
 
 export default function Capabilities() {
   return (
@@ -11,9 +16,9 @@ export default function Capabilities() {
         Our Core Capabilities
       </SectionTitle>
 
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-4">
         {CAPABILITIES.map((cap) => {
-          const Icon = ICONS[cap.icon]
+          const Icon = ICONS[cap.icon];
           return (
             <div
               key={cap.title}
@@ -25,11 +30,13 @@ export default function Capabilities() {
               <h3 className="mb-3 whitespace-pre-line text-base font-extrabold uppercase leading-tight tracking-wider">
                 {cap.title}
               </h3>
-              <p className="text-[13.5px] leading-relaxed text-muted">{cap.text}</p>
+              <p className="text-[13.5px] leading-relaxed text-muted">
+                {cap.text}
+              </p>
             </div>
-          )
+          );
         })}
       </div>
     </section>
-  )
+  );
 }

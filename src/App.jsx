@@ -19,9 +19,9 @@ export default function App() {
         <Hero />
 
         {/* Capabilities + Fleet split — faithful to the original layout */}
-        <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-stretch gap-8 px-5 py-14 md:px-10 lg:grid-cols-2 lg:gap-5">
+        <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-stretch gap-8 px-5 py-14 md:px-10 lg:grid-cols-1 lg:gap-5">
           <Capabilities />
-          <Fleet />
+          {/* <Fleet /> */}
         </div>
 
         <Services />
