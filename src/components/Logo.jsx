@@ -2,16 +2,17 @@
 export function Logo({ className = "w-12 h-auto" }) {
   return (
     <img
-      src="/src/assets/images/logo.png"
+      src="/images/logo.png"
       alt="Ratnanjali Aerospace"
       className={className}
     />
   );
 }
-export function LogoName({ className = " h-auto" }) {
+
+export function LogoName({ className = "h-auto" }) {
   return (
     <img
-      src="/src/assets/images/logoname.png"
+      src="/images/logoname.png"
       alt="Ratnanjali Aerospace"
       className={className}
     />

@@ -7,7 +7,7 @@
 const U = "https://images.unsplash.com/";
 
 export const IMG = {
-  hero: "/src/assets/images/hero.png",
+  hero: "/images/hero.png",
   droneCloseup:
     U + "photo-1508444845599-5c89863b1c44?auto=format&fit=crop&w=1200&q=80",
   quad: U + "photo-1521405924368-64c5b84bec60?auto=format&fit=crop&w=800&q=80",
