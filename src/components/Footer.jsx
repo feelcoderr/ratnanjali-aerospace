@@ -82,10 +82,10 @@ export default function Footer() {
                 <Mail size={16} className="shrink-0 text-gold-mid" />
                 {FOOTER.email}
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <Phone size={16} className="shrink-0 text-gold-mid" />
                 {FOOTER.phone}
-              </li>
+              </li> */}
             </ul>
 
             <div className="mt-6 flex overflow-hidden rounded-lg border border-gold-soft bg-panel">

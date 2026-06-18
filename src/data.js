@@ -25,8 +25,7 @@ export const IMG = {
 export const NAV = [
   "Home",
   "Drones",
-  "Solutions",
-  "Technology",
+  "Projects",
   "Company",
   "Careers",
   "Contact",
@@ -162,8 +161,8 @@ export const INDUSTRIES = [
     img: "aerial1",
   },
   {
-    name: "Mining",
-    text: "Stockpile volumes and terrain modelling.",
+    name: "Water Drones & ROVs",
+    text: "Remotely operated systems for underwater inspection, mapping and exploration.",
     img: "spray",
   },
   {
@@ -248,7 +247,8 @@ export const FOOTER = {
       links: ["Documentation", "Case Studies", "Support", "Contact"],
     },
   ],
-  address: "Ratnanjali Aerospace Pvt. Ltd.\nAhmedabad, Gujarat, India",
-  email: "hello@ratnanjali.aero",
+  address:
+    "201 & 202, Ratnanjali Square, Nr. Gloria Restaurant, Prahlad Nagar, Ahmedabad - 380015",
+  email: "business@aerospace.ratnanjali.com",
   phone: "+91 79 0000 0000",
 };
